@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlTemplate.Android", "CustomControlTemplate\CustomControlTemplate.Android\CustomControlTemplate.Android.csproj", "{F85C164E-7A34-4FB4-98CF-580845BEB09A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlTemplate", "CustomControlTemplate\CustomControlTemplate\CustomControlTemplate.csproj", "{E0963A8B-3285-462F-92F9-96B283DEE903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85C164E-7A34-4FB4-98CF-580845BEB09A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0963A8B-3285-462F-92F9-96B283DEE903}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CCB9FC2-C48C-4B6B-B4F3-92E3A59D1A25}
+	EndGlobalSection
+EndGlobal

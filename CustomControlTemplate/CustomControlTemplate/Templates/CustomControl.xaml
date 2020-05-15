@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <ControlTemplate x:Key="CustomControlTemplate">
+        <Frame BackgroundColor="DarkGray" WidthRequest="100" HeightRequest="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Frame.Triggers>
+                <DataTrigger TargetType="Frame" Binding="{TemplateBinding IsProcessingRequest}" Value="True">
+                    <Setter Property="BackgroundColor" Value="LightGray" ></Setter>
+                </DataTrigger>
+                <DataTrigger TargetType="Frame" Binding="{TemplateBinding IsButtonPressed}" Value="True">
+                    <Setter Property="Opacity" Value="0.5" ></Setter>
+                    <Setter Property="HasShadow" Value="False" />
+                </DataTrigger>
+            </Frame.Triggers>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{TemplateBinding Command}" ></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+            <ContentView.Content>
+                <ContentPresenter />
+            </ContentView.Content>
+        </Frame>
+    </ControlTemplate>
+</ResourceDictionary>

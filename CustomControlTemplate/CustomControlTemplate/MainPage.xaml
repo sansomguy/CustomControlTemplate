@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:CustomControlTemplate.Controls"
+             mc:Ignorable="d"
+             x:Class="CustomControlTemplate.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="Templates/CustomControl.xaml" />
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <controls:CustomControl VerticalOptions="CenterAndExpand" ControlTemplate="{StaticResource CustomControlTemplate}">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Button" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                </Label>
+                <Image Source="https://i.giphy.com/media/fUkC9LzRyIxJhYPASn/source.gif" IsAnimationPlaying="True" WidthRequest="40" HeightRequest="40"></Image>
+            </StackLayout>
+        </controls:CustomControl>
+        <controls:CustomControl VerticalOptions="CenterAndExpand" ControlTemplate="{StaticResource CustomControlTemplate}">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://i.giphy.com/media/fUkC9LzRyIxJhYPASn/source.gif" IsAnimationPlaying="True" WidthRequest="40" HeightRequest="40"></Image>
+                <Label Text="Button" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                </Label>
+            </StackLayout>
+        </controls:CustomControl>
+        <controls:CustomControl VerticalOptions="CenterAndExpand" ControlTemplate="{StaticResource CustomControlTemplate}">
+                <Image Source="https://i.giphy.com/media/fUkC9LzRyIxJhYPASn/source.gif" IsAnimationPlaying="True" WidthRequest="40" HeightRequest="40"></Image>
+        </controls:CustomControl>
+    </StackLayout>
+</ContentPage>
